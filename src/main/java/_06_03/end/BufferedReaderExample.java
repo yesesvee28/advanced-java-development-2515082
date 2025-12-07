@@ -16,9 +16,10 @@ public class BufferedReaderExample {
             StringBuilder stringBuilder = new StringBuilder();
             reader.lines().forEach(line -> stringBuilder.append(line + "  "));
             System.out.println(stringBuilder);
+             reader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+       
     }
 }

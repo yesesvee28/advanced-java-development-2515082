@@ -15,6 +15,7 @@ public class BufferedReaderExample {
             System.out.println("Every other line:");
             StringBuilder stringBuilder = new StringBuilder();
             reader.lines().forEach(stringBuilder::append);
+             reader.close();
             System.out.println(stringBuilder);
         } catch (IOException e) {
             e.printStackTrace();

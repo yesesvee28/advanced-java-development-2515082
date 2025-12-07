@@ -16,6 +16,7 @@ public class ScannerExample {
         System.out.print("Please enter your occupation: ");
         String occupation = scanner.nextLine();
         System.out.println(occupation);
+        scanner.close();
     }
 
 }
